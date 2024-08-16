@@ -5,91 +5,7 @@
     --text-color:#C7B7A3;
     --main-color:#561C24;
 }
-.wrapper{
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 9;
-  background: linear-gradient(-135deg, #6D2932, #561C24);
-  /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
-  /* clip-path: circle(25px at calc(0% + 45px) 45px); */
-  clip-path: circle(25px at calc(100% - 45px) 45px);
-  transition: all 0.3s ease-in-out;
-}
-#active:checked ~ .wrapper{
-  clip-path: circle(75%);
-}
-.menu-btn{
-  position: fixed;
-  z-index: 10;
-  right: 20px;
-  /* left: 20px; */
-  top: 20px;
-  height: 50px;
-  width: 50px;
-  text-align: center;
-  line-height: 50px;
-  border-radius: 50%;
-  font-size: 20px;
-  color: #fff;
-  cursor: pointer;
-  background: linear-gradient(-135deg, #6D2932, #561C24);
-  /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
-  transition: all 0.3s ease-in-out;
-}
-#active:checked ~ .menu-btn{
-  background: #fff;
-  color: #561C24;
-}
-#active:checked ~ .menu-btn i:before{
-  content: "\f00d";
-}
-.wrapper ul{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  list-style: none;
-  text-align: center;
-}
-.wrapper ul li{
-  margin: 15px 0;
-}
-.wrapper ul li a{
-  color: none;
-  text-decoration: none;
-  font-size: 30px;
-  font-weight: 500;
-  padding: 5px 30px;
-  color: #fff;
-  position: relative;
-  line-height: 50px;
-  transition: all 0.3s ease;
-}
-.wrapper ul li a:after{
-  position: absolute;
-  content: "";
-  background: #fff;
-  width: 100%;
-  height: 50px;
-  left: 0;
-  border-radius: 50px;
-  transform: scaleY(0);
-  z-index: -1;
-  transition: transform 0.3s ease;
-}
-.wrapper ul li a:hover:after{
-  transform: scaleY(1);
-  color: #561C24;
-}
-#active:checked ~ .menu-btn2 i:before{
-  content: "<i class='bx bx-x'></i>";
-}
-input[type="checkbox"]{
-  display: none;
-}
+
 
 h1{
   font-family: 'Russo One', sans-serif;
@@ -292,6 +208,12 @@ p, h2{
   font-weight: 700;
 }
 
+.card__title_1 {
+  margin: 0;
+  font-size: 23px;
+  color: var(--main-color);
+  font-weight: 700;
+}
 .card__description {
   margin: 10px 0 0;
   font-size: 14px;
@@ -392,8 +314,8 @@ p, h2{
   font-size: 2rem;
   transition: all 500ms ease;
 }
+
 .skill-title:hover{
-  transition: all 500ms ease;
   letter-spacing: 0.2rem;
 }
 .skill-container{
